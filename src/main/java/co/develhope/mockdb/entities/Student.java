@@ -9,7 +9,7 @@ public class Student{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id_studente;
+    private long Id;
 
     private String nome;
     private String cognome;
@@ -20,19 +20,19 @@ public class Student{
     public Student() {
     }
 
-    public Student(long id_studente, String nome, String cognome, String email) {
-        this.id_studente = id_studente;
+    public Student(long Id, String nome, String cognome, String email) {
+        this.Id = Id;
         this.nome = nome;
         this.cognome = cognome;
         this.email = email;
     }
 
-    public long getId_studente() {
-        return id_studente;
+    public long getId() {
+        return Id;
     }
 
-    public void setId_studente(long id_studente) {
-        this.id_studente = id_studente;
+    public void setId(long Id) {
+        this.Id = Id;
     }
 
     public String getNome() {
